@@ -30,4 +30,15 @@ public class DataAnalyser {
         }
         return older;
     }
+
+    public int numberOfTeenagers() {
+        int numberOfTeenagers = 0;
+
+        for (Person p: people) {
+            if (p.age() >= 13 && p.age() <= 19) {
+                numberOfTeenagers++;
+            }
+        }
+        return numberOfTeenagers;
+    }
 }

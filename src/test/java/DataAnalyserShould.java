@@ -59,4 +59,12 @@ public class DataAnalyserShould {
                 new Person("Bob", Gender.MALE, 47)
         )));
     }
+
+    @Test
+    public void get_number_of_teenagers() {
+        int numberOfTeenagers = analyser.numberOfTeenagers();
+
+
+        assertThat(numberOfTeenagers, is(2));
+    }
 }
